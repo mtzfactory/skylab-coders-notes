@@ -1,3 +1,5 @@
+[![Skylab](https://github.com/Iggy-Codes/logo-images/blob/master/logos/skylab-56.png)](http://www.skylabcoders.com/)
+
 # SkylabCoders Academy
 ## Full Stack Web Development Bootcamp @Autumn2017
 
