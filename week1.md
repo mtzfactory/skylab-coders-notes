@@ -12,49 +12,49 @@ console.log(T1)
 
 2. SYSTEM
 - Buscar palabra contenida en ficheros, devuelve fichero y la linea de texto:
-```
+```bash
 $ grep -R <palabra> <ruta-donde-buscar>
 ```
 - Buscar palabra en ficheros, pero devuelve sólo nombre de ficheros.
-```
+```bash
 $ grep -Rl <palabra> <ruta-donde-buscar>
 ```
 
 3. GIT
 - Inicializar un repositorio maestro vacio (desnudo):
-```
+```bash
 app/dirM$ git init --bare
 ```
 - Clonar directorio:
-```
+```bash
 app/dir1$ git clone ../dir1
 ```
 - Deshacer el añadido de fichero en staging (antes de commit):
-```
+```bash
 app/dir1$ git rm --cached <file>
 ```
 - Ver histórico de acciones:
-```
+```bash
 app/dir1$ git log
 ```
 - Recuperar version anterior de fichero:
-```
+```bash
 app/dir1$ git checkout <commit-id-del-log>
 app/dir1$ git checkout -- <file>
 ```
 - Ver diferencias entre estado actual y anterior:
-```
+```bash
 app/dir2$ git diff HEAD^ HEAD
 ```
 - Ver diferencias a nivel local:
-```
+```bash
 app/dir2$ git diff HEAD
 ```
 - Añadir servidor remoto:
-```
+```bash
 app/dir1$ git remote add origin <url-servidor-remoto>
 ```
 - Subir los cambios al servidor remoto:
-```
+```bash
 app/dir1$ git push -u origin master
 ```
