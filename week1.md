@@ -1,5 +1,3 @@
-
-
 # SkylabCoders Academy
 ## Full Stack Web Development Bootcamp @Autumn2017
 
