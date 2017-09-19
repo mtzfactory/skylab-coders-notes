@@ -68,4 +68,16 @@ app/dir1$ git push -u origin master
 ```
 
 ### ~ 20170919
-
+- Crear una rama del proyecto:
+```bash
+$ git checkout -b <nombre-de-rama>
+```
+- Actualizar la rama master con la 
+```bash
+$ git checkout master
+$ git merge <nombre-de-rama>
+```
+- Borrar la rama:
+```bash
+$ git branch -d <nombre-de-rama>
+```
