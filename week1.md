@@ -29,9 +29,17 @@ app/dirM$ git init --bare
 ```bash
 app/dir1$ git clone ../dir1
 ```
-- Deshacer el añadido de fichero en staging (antes de commit):
+- Eliminar fichero del staging (antes de commit):
 ```bash
 app/dir1$ git rm --cached <file>
+```
+o bien:
+```
+app/dir1$ git reset
+```
+- Volver al estado "current", último commit del proyecto.
+```bash
+app/dir1$ git checkout master
 ```
 - Ver histórico de acciones:
 ```bash
@@ -42,7 +50,7 @@ app/dir1$ git log
 app/dir1$ git checkout <commit-id-del-log>
 app/dir1$ git checkout -- <file>
 ```
-- Ver diferencias entre estado actual y anterior:
+- Ver diferencias entre estado anterio y actual:
 ```bash
 app/dir2$ git diff HEAD^ HEAD
 ```
@@ -58,3 +66,6 @@ app/dir1$ git remote add origin <url-servidor-remoto>
 ```bash
 app/dir1$ git push -u origin master
 ```
+
+### ~ 20170919
+
