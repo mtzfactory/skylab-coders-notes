@@ -1,16 +1,16 @@
 # SkylabCoders Academy
 ## Full Stack Web Development Bootcamp @Otoño2017
 
-### ~ 20170918
+## ~ 20170918
 
-1. MARKDOWN
+### MARKDOWN
 - Formatear como código:
 ```javascript
 varT1="Esto es una prueba de formato. 🤓"
 console.log(T1)
 ```
 
-2. SYSTEM
+### SYSTEM
 - Buscar palabra contenida en ficheros, devuelve fichero y la linea de texto:
 ```bash
 $ grep -R <palabra> <ruta-donde-buscar>
@@ -20,7 +20,7 @@ $ grep -R <palabra> <ruta-donde-buscar>
 $ grep -Rl <palabra> <ruta-donde-buscar>
 ```
 
-3. GIT
+### GIT
 - Inicializar un repositorio maestro vacio (desnudo):
 ```bash
 app/dirM$ git init --bare
@@ -67,7 +67,7 @@ app/dir1$ git remote add origin <url-servidor-remoto>
 app/dir1$ git push -u origin master
 ```
 
-### ~ 20170919
+## ~ 20170919
 - Crear una rama del proyecto:
 ```bash
 $ git checkout -b <nombre-de-rama>
@@ -82,7 +82,7 @@ $ git merge <nombre-de-rama>
 $ git branch -d <nombre-de-rama>
 ```
 
-4. JAVASCRIPT
+### JAVASCRIPT
 - Tipo de datos: [[enlace]](https://github.com/juanmaguitar/javascript-notes/blob/master/markdown-en/02-variables-data-types-operators/README.md)
     - **Primitives**: number, string, boolean, undefined, null.
     - **Objects**: el resto, para ver tipo de objecto constructor:
@@ -97,23 +97,26 @@ $ git branch -d <nombre-de-rama>
         ```
 - Prototyping: [[enlace]](https://github.com/juanmaguitar/javascript-notes/blob/master/markdown-en/09-prototype/README.md)
     ```javascript
-    > function Animal(name){
+    > function Animal(species, name){
+        this.species = species;
         this.name = name;
     }
     > Animal.prototype.type = 'animal';
-    > Animal.prototype.eat = function() { console.log('go to eat'); }
-    > Animal.prototype.sleep = function() { console.log('go to sleep'); }
+    > Animal.prototype.eat = function() { console.log(this.species + ', going to eat.'); };
+    > Animal.prototype.sleep = function() { console.log(this.species + ', going to sleep.'); };
+    > var cat = new Animal('cat');
+    > var dog = new Animal('dog');
     > Animal.prototype
-    {type: "animal", eat: f, sleep: f, constructor: f}
+    Animal {type: 'animal', eat: func, sleep: func}
     ```
 - Heredando prototipo:
     ```javascript
     > function Human(name){
-        this.name = name;
+        Animal.call(this, 'human', name);
     }
     > Human.prototype = new Animal();
-    > Human.prototype.speak = function() { console.log('I\'m speaking'); }
-    > me = new Human('Ricardo');
+    > Human.prototype.speak = function() { console.log(this.name + ' is speaking.'); }
+    > var me = new Human('Ricardo');
     > me instanceof Human;
     true
     > me instanceof Animal;
@@ -137,8 +140,77 @@ $ git branch -d <nombre-de-rama>
     "brompton"
     ```
 
-### ~ 20170920
-### ~ 20170921
+## ~ 20170921
+
+### JAVASCRIPT
+- **Polifill**: añadir funcionalidades no soportodas por el navegador a los objetos.
+    ```javascript
+    String.prototype.toCapitalLetter = function() { ... };
+    String.prototype.clone = function() { ... };
+    ```
+- **Hoisting** ~ elevación: (también aplica a la hora de delaración de métodos.)
+    ```javascript
+    > function f() { x = 5; console.log(x); }
+    > x
+    ReferenceError: Can t find variable: x
+    > f()
+    5
+    > x
+    5
+    ```
+    Muestra la variable 'x' pq el método 'f()' la define en el scope global, al no estar definida con 'var x;'
+    ```
+    > function f() { x = 5; console.log(x); var x;}
+    > f()
+    5
+    > x
+    ReferenceError: Can t find variable: x
+    ```
+    Aunque defino 'var x;' al final del método 'f()', hace elevación y se define dentro del scope del propio método.
+
+- **Closures**: scope de las variables. [[enlace]][closure]
+    ```javascript
+    > function f() { 
+        this.x = 5;
+        this.fun = function() {
+          console.log(x);
+        }
+      }
+    > var v = new f();
+    > v.x
+    5
+    > v.fun()
+    ReferenceError: Can t find variable: x
+    > function f() { 
+        this.x = 5;
+        this.fun = function() {
+          console.log(this.x);
+        }
+      }
+    > var v = new f();
+    > v.x
+    5
+    > v.fun()
+    5
+    ```
+[closure]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
+- Otro ejemplo: contador de visitas...
+    ```
+    > var callMe = function() {
+        var numCalls = 0
+        return function() {
+            return ++numCalls
+        }
+    }()
+    > callMe();
+    1
+    > callMe();
+    2
+    > callMe();
+    3
+    ```
+
+### GIT
 - Añadir servidor origen **'upstream'** del repositirio que tengo **'fork'** local:
     ```bash
     $ git remote add upstream <url-project-master>
