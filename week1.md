@@ -114,8 +114,59 @@ $ git branch -d <nombre-de-rama>
     > Human.prototype = new Animal();
     > Human.prototype.speak = function() { console.log('I\'m speaking'); }
     > me = new Human('Ricardo');
-    > me instanceof Human
+    > me instanceof Human;
     true
-    > me instanceof Animal
+    > me instanceof Animal;
     true
     ```
+- Accessors: getter / setter
+    ```javascript
+    > function Bike(name) {
+        var _name = name;
+        this.setName = function() { _name = name; }
+        this.getName = function() { return _name; }
+    }
+    > var bike = Bike('conor');
+    > bike.getName();
+    "conor"
+    > bike.setName('brompton');
+    > bike.getName();
+    "brompton"
+    > bike._name = 'bmx';   // la propiedad _name no pertenece al objeto, pq es una variable interna, y se crea como propiedad nueva
+    > bike.getName();
+    "brompton"
+    ```
+
+### ~ 20170920
+### ~ 20170921
+- Añadir servidor origen **'upstream'** del repositirio que tengo **'fork'** local:
+    ```bash
+    $ git remote add upstream <url-project-master>
+    ```
+- Listar configuración de servidores remotos:
+    ```bash
+    $ git remote -v
+    origin  https://github.com/mtzfactory/skylab-bootcamp-201709.git (fetch)
+    origin  https://github.com/mtzfactory/skylab-bootcamp-201709.git (push)
+    upstream    https://github.com/manuelbarzi/skylab-bootcamp-201709.git (fetch)
+    upstream    https://github.com/manuelbarzi/skylab-bootcamp-201709.git (push)
+    ```
+- Descargar los cambios del **upstream** original, pero no aplicarlos a mi fork local.
+    ```bash
+    $ git fetch upstream
+    ```
+- Comprobar en qué rama estoy en mi repositiorio local.
+    ```bash
+    git checkout master
+    Already on 'master'
+    Your branch is up-to-date with 'origin/master'.
+    ```
+- Aplicar los cambios descargados con el 'fetch' en mi rama actual, en este caso 'master'
+    ```bash
+    $ git merge upstream/master
+    ```
+- Actualizar **mi** servidor remoto 'origin' rama 'master':
+    ```bash
+    $ git push origin master
+    ```
+
