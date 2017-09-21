@@ -155,17 +155,17 @@ $ git branch -d <nombre-de-rama>
     ```bash
     $ git fetch upstream
     ```
-- Comprobar en qué rama estoy en mi repositiorio local.
+- Comprobar en qué rama estoy en mi _working copy_.
     ```bash
     git checkout master
     Already on 'master'
     Your branch is up-to-date with 'origin/master'.
     ```
-- Aplicar los cambios descargados con el 'fetch' en mi rama actual, en este caso 'master'
+- Aplicar los cambios descargados con el 'fetch' en mi _working copy_
     ```bash
     $ git merge upstream/master
     ```
-- Actualizar **mi** servidor remoto 'origin' rama 'master':
+- Actualizar **mi** servidor remoto 'origin', rama 'master':
     ```bash
     $ git push origin master
     ```
