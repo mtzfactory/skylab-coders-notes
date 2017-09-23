@@ -1,4 +1,3 @@
-# SkylabCoders Academy
 ## Full Stack Web Development Bootcamp @Otoño2017
 
 ## ~ 20170918
@@ -251,7 +250,7 @@ $ git branch -d <nombre-de-rama>
     $ git commit --ammend --no-edit
     ```
 
-## ~ 20170921
+## ~ 20170922
 
 ### TDD & BDD : Test Driven Development / Behavior-Driven Development.
 - TDD: primero se implemente el test y luego la implementación de la funcionalidad. Comprueba resultados concretos.
