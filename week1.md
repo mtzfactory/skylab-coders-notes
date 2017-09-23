@@ -158,7 +158,7 @@ $ git branch -d <nombre-de-rama>
     5
     ```
     Muestra la variable 'x' pq el método 'f()' la define en el scope global, al no estar definida con 'var x;'
-    ```
+    ```javascript
     > function f() { x = 5; console.log(x); var x;}
     > f()
     5
@@ -194,7 +194,7 @@ $ git branch -d <nombre-de-rama>
     ```
 [closure]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
 - Otro ejemplo: contador de visitas...
-    ```
+    ```javascript
     > var callMe = function() {
         var numCalls = 0
         return function() {
@@ -280,7 +280,7 @@ $ git branch -d <nombre-de-rama>
     ```
 [jasmine-api]: https://jasmine.github.io/edge/introduction.html
 - Snippet: para espiar la llamada de un metodo...
-    ```
+    ```javascript
     > function spyOn (obj, method) {
         var counter = 0;
         obj[method] = function() {
