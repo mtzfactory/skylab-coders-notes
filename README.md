@@ -5,17 +5,15 @@
 ### Enlaces de interés:
 
 ![github][img-github] https://juanmaguitar.github.io/bootcamp-september2017/
-
 ![github][img-github] https://github.com/agandia9/Subjects-PreCourse
-
 ![github][img-github] https://github.com/SkylabCoders/bootcamp-winter2017/blob/master/README.md
-
 ![youtube][img-youtube] https://www.youtube.com/playlist?list=PLjge_y_KBC8Gofv9UXhHM6s-PokIFdpkR
+
+1. Semana 1: [week1.md](week1.md)
 
 ### Configurar git para repositorios en Github.
 
 ![github][img-github] https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
-
 ![github][img-github] https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
 
 [//]: # (Referencias a imágenes)

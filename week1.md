@@ -241,4 +241,61 @@ $ git branch -d <nombre-de-rama>
     ```bash
     $ git push origin master
     ```
+- Modificar mensaje del último commit:
+    ```bash
+    $ git commit --amend -m "nuevo mensaje para el último commit"
+    ```
+- Añadir nuevo fichero al commit anterior, pero no modificar el mensaje de commit.
+    ```bash
+    $ git add <nuevo-fichero.js>
+    $ git commit --ammend --no-edit
+    ```
 
+## ~ 20170921
+
+### TDD & BDD : Test Driven Development / Behavior-Driven Development.
+- TDD: primero se implemente el test y luego la implementación de la funcionalidad. Comprueba resultados concretos.
+- BDD: Comprueba el comportamineto del funcionamiento para 'cualquier' situación.
+- Jasmine. (BDD) [[enlace]][jasmine]
+    ```javascript
+    describe("A suite is just a function", function() {
+      var a;
+
+      it("and so is a spec", function() {
+        a = true;
+
+        expect(a).toBe(true);
+      });
+    });
+    ```
+[jasmine]: https://jasmine.github.io
+- Metodos de jasmine: [[api]][jasmine-api]
+    ```
+    toBeDefined / toBeUndefined
+    toBeTruthy / toBeFalsy
+    toBeLessThan / toBeGreaterThan
+    toMatch         ~ encaja con una regular expresion.
+    toContain       ~ array o string contiene un item o substring.
+    toThrow         ~ comprobar si se eleva una excepción.
+    toThrowError    ~ comprobar si se eleva un error.
+    ```
+[jasmine-api]: https://jasmine.github.io/edge/introduction.html
+- Snippet: para espiar la llamada de un metodo...
+    ```
+    > function spyOn (obj, method) {
+        var counter = 0;
+        obj[method] = function() {
+            console.log('spying "' + method + '" method is called, count ' + ++counter);
+        }
+    }
+    > var player = {
+        play: function() {
+            console.log('playing');
+        }
+    }
+    > player.play();
+    "playing"
+    > spyOn(player, 'play');
+    > player.play();
+    "spying play method is called, count 1"
+    ```
