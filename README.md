@@ -12,6 +12,7 @@
 
 ![youtube][img-youtube] https://www.youtube.com/playlist?list=PLjge_y_KBC8Gofv9UXhHM6s-PokIFdpkR
 
+### Notas de clase:
 1. Semana 1: [week1.md](week1.md)
 
 ### Configurar git para repositorios en Github.
