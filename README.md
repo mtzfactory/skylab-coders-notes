@@ -6,9 +6,10 @@
 
 ![github][img-github] https://juanmaguitar.github.io/bootcamp-september2017/
 
+![github][img-github] https://github.com/juanmaguitar/bootcamp-september2017
+
 ![github][img-github] https://github.com/agandia9/Subjects-PreCourse
 
-![github][img-github] https://github.com/SkylabCoders/bootcamp-winter2017/blob/master/README.md
 
 ![youtube][img-youtube] https://www.youtube.com/playlist?list=PLjge_y_KBC8Gofv9UXhHM6s-PokIFdpkR
 
