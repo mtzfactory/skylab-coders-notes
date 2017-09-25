@@ -20,6 +20,7 @@
     <a>
     <em>
     <strong>
+    <small>
     <img>
     <input>
     ...
@@ -49,7 +50,7 @@ Si el contenido se agrega al esquema del documento y puede redistribuirse o sind
 
 Si el contenido se agrega al esquema del documento y representa un grupo temático de contenido, utilice el elemento <code>section</code>.
 
-- Aside:
+- **Aside**:
 
 El elemento <code>aside</code> contiene contenido, como barras laterales, inserciones o breves explicaciones, que está tangencialmente relacionado con el contenido que lo rodea. Cuando se utiliza dentro de un elemento <code>article</code>, por ejemplo, el elemento <code>aside</code> puede identificar el contenido relacionado con el autor del artículo.
 
