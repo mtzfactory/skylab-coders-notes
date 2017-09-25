@@ -35,7 +35,9 @@
     <section>
     <article>
     <aside>
+    <hgroup>
     <footer>
+    <address>
     ```
 
 [semantic-tags]: https://learn.shayhowe.com/html-css/getting-to-know-html/
