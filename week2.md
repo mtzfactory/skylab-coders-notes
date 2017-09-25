@@ -27,7 +27,7 @@
 
 [block-vs-inline]: http://www.html5-tutorials.org/html-basics/block-inline-elements/
 
-- Semantic tags:
+- Semantic tags: [[enlace]][semantic-tags]
     ```html
     <header>
     <nav>
@@ -36,6 +36,8 @@
     <aside>
     <footer>
     ```
+
+[semantic-tags]: https://learn.shayhowe.com/html-css/getting-to-know-html/
 
 - Syndication: contenido interpretable por un motor de contenido, tipo [hAtom 0.1 Microformat](http://microformats.org/wiki/hatom).
 
