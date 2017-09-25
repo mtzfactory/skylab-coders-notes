@@ -4,82 +4,82 @@
 
 ### MARKDOWN
 - Formatear como código:
-```javascript
-varT1="Esto es una prueba de formato. 🤓"
-console.log(T1)
-```
+    ```javascript
+    varT1="Esto es una prueba de formato. 🤓"
+    console.log(T1)
+    ```
 
 ### SYSTEM
 - Buscar palabra contenida en ficheros, devuelve fichero y la linea de texto:
-```bash
-$ grep -R <palabra> <ruta-donde-buscar>
-```
+    ```bash
+    $ grep -R <palabra> <ruta-donde-buscar>
+    ```
 - Buscar palabra en ficheros, pero devuelve sólo nombre de ficheros.
-```bash
-$ grep -Rl <palabra> <ruta-donde-buscar>
-```
+    ```bash
+    $ grep -Rl <palabra> <ruta-donde-buscar>
+    ```
 
 ### GIT
 - Inicializar un repositorio maestro vacio (desnudo):
-```bash
-app/dirM$ git init --bare
-```
+    ```bash
+    app/dirM$ git init --bare
+    ```
 - Clonar directorio:
-```bash
-app/dir1$ git clone ../dir1
-```
+    ```bash
+    app/dir1$ git clone ../dir1
+    ```
 - Eliminar fichero del staging (antes de commit):
-```bash
-app/dir1$ git rm --cached <file>
-```
+    ```bash
+    app/dir1$ git rm --cached <file>
+    ```
 o bien:
-```
-app/dir1$ git reset
-```
+    ```
+    app/dir1$ git reset
+    ```
 - Volver al estado "current", último commit del proyecto.
-```bash
-app/dir1$ git checkout master
-```
+    ```bash
+    app/dir1$ git checkout master
+    ```
 - Ver histórico de acciones:
-```bash
-app/dir1$ git log
-```
+    ```bash
+    app/dir1$ git log
+    ```
 - Recuperar version anterior de fichero:
-```bash
-app/dir1$ git checkout <commit-id-del-log>
-app/dir1$ git checkout -- <file>
-```
+    ```bash
+    app/dir1$ git checkout <commit-id-del-log>
+    app/dir1$ git checkout -- <file>
+    ```
 - Ver diferencias entre estado anterio y actual:
-```bash
-app/dir2$ git diff HEAD^ HEAD
-```
+    ```bash
+    app/dir2$ git diff HEAD^ HEAD
+    ```
 - Ver diferencias a nivel local:
-```bash
-app/dir2$ git diff HEAD
-```
+    ```bash
+    app/dir2$ git diff HEAD
+    ```
 - Añadir servidor remoto:
-```bash
-app/dir1$ git remote add origin <url-servidor-remoto>
-```
+    ```bash
+    app/dir1$ git remote add origin <url-servidor-remoto>
+    ```
 - Subir los cambios al servidor remoto:
-```bash
-app/dir1$ git push -u origin master
-```
+    ```bash
+    app/dir1$ git push -u origin master
+    ```
 
 ## ~ 20170919
 - Crear una rama del proyecto:
-```bash
-$ git checkout -b <nombre-de-rama>
-```
+    ```bash
+    $ git checkout -b <nombre-de-rama>
+    ```
 - Actualizar la rama master con la rama anterior:
-```bash
-$ git checkout master
-$ git merge <nombre-de-rama>
-```
+    ```bash
+    $ git checkout master
+    $ git merge <nombre-de-rama>
+    ```
 - Borrar la rama:
-```bash
-$ git branch -d <nombre-de-rama>
-```
+    ```bash
+    $ git branch -d <nombre-de-rama>
+    ```
 
 ### JAVASCRIPT
 - Tipo de datos: [[enlace]](https://github.com/juanmaguitar/javascript-notes/blob/master/markdown-en/02-variables-data-types-operators/README.md)
