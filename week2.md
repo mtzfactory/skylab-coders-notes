@@ -49,6 +49,12 @@ Si el contenido se agrega al esquema del documento y puede redistribuirse o sind
 
 Si el contenido se agrega al esquema del documento y representa un grupo temático de contenido, utilice el elemento <code>section</code>.
 
+- Aside:
+
+El elemento <code>aside</code> contiene contenido, como barras laterales, inserciones o breves explicaciones, que está tangencialmente relacionado con el contenido que lo rodea. Cuando se utiliza dentro de un elemento <code>article</code>, por ejemplo, el elemento <code>aside</code> puede identificar el contenido relacionado con el autor del artículo.
+
+Podemos instintivamente pensar en un elemento <code>aside</code> como un elemento que aparece a la izquierda o a la derecha de una página. No obstante, debemos recordar que todos los elementos estructurales, incluido el elemento <code>aside</code>, son elementos a nivel de bloque y, como tales, aparecerán en una nueva línea, ocupando el ancho total disponible de la página o del elemento que son anidados dentro, también conocido como su elemento padre.
+
 - Syndication: contenido interpretable por un motor de contenido, tipo [hAtom 0.1 Microformat](http://microformats.org/wiki/hatom).
 
 
