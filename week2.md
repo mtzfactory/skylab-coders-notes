@@ -9,7 +9,9 @@
     <div>
     <h1>
     <p>
-    <ul> <ol> <li>
+    <ul>
+    <ol>
+    <li>
     ...
     ```
     + Un elemento **inline** no empieza en una linea nueva y sólo toma el ancho que necesita. P.e:
@@ -26,12 +28,14 @@
 [block-vs-inline]: http://www.html5-tutorials.org/html-basics/block-inline-elements/
 
 - Semantic tags:
-    + ```<header>```
-    + ```<nav>```
-    + ```<section>```
-    + ```<article>```
-    + ```<aside>```
-    + ```<footer>```
+    ```html
+    <header>
+    <nav>
+    <section>
+    <article>
+    <aside>
+    <footer>
+    ```
 
 - Syndication: contenido interpretable por un motor de contenido, tipo [hAtom 0.1 Microformat](http://microformats.org/wiki/hatom).
 
