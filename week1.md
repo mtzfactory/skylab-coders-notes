@@ -139,6 +139,10 @@ $ git branch -d <nombre-de-rama>
     "brompton"
     ```
 
+## ~ 20170920
+- Regex: [enlace 1](https://github.com/juanmaguitar/javascript-notes/blob/master/markdown-en/08-regular-expressions/README.md)
+[enlace 2](http://eloquentjavascript.net/09_regexp.html)
+
 ## ~ 20170921
 
 ### JAVASCRIPT
@@ -270,6 +274,8 @@ $ git branch -d <nombre-de-rama>
 [jasmine]: https://jasmine.github.io
 - Metodos de jasmine: [[api]][jasmine-api]
     ```
+    toBe            ~ mas extricto, espera que sea el mismo objeto, con el mismo hash.
+    toEqual         ~ menos extricto, no espera que sea el mismo objeto
     toBeDefined / toBeUndefined
     toBeTruthy / toBeFalsy
     toBeLessThan / toBeGreaterThan

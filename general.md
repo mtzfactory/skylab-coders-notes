@@ -1,3 +1,7 @@
+### Páginas de interes.
+- para practicar: [cyber-dojo](http://cyber-dojo.org)
+- metodologia ágil: [trello](https://trello.com)
+
 ### Configurar git para repositorios en Github.
 
 ![github][img-github] https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/

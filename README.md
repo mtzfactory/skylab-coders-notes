@@ -15,7 +15,7 @@
 
 ### Notas de clase:
 1. Semana 1: [week1.md](week1.md)
-
+1. Semana 2: [week2.md](week2.md)
 
 [//]: # (Referencias a imágenes)
 [img-github]: https://cdn3.iconfinder.com/data/icons/free-social-icons/67/github_circle_black-20.png
