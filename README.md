@@ -10,7 +10,6 @@
 
 ![github][img-github] https://github.com/agandia9/Subjects-PreCourse
 
-
 ![youtube][img-youtube] https://www.youtube.com/playlist?list=PLjge_y_KBC8Gofv9UXhHM6s-PokIFdpkR
 
 ### Notas de clase:
