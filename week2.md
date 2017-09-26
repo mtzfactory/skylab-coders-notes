@@ -90,7 +90,7 @@ Podemos instintivamente pensar en un elemento <code>aside</code> como un element
     + box-sizing: content-box | border-box | initial | inherit;
     <br>La propiedad de <code>box-sizing</code> se utiliza para alterar el modelo de caja CSS predeterminado utilizado para calcular el ancho y la altura de los elementos.
 
-- Position: [enlace](http://www.barelyfitz.com/screencast/html-training/css/positioning/) [grafico](images/positioning_elements.png)
+- Position: [enlace](http://www.barelyfitz.com/screencast/html-training/css/positioning/), [gráfico](images/positioning_elements.png)
     + position: static    ~ por defecto todos...
     + position: relative  ~ respecto su posición natural.
     + position: fixed     ~ relativo al viewport.
