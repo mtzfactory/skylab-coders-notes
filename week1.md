@@ -272,7 +272,7 @@ o bien:
     });
     ```
 [jasmine]: https://jasmine.github.io
-- Metodos de jasmine: [[api]][jasmine-api]
+- Metodos de **jasmine**: [[api]][jasmine-api]
     ```
     toBe            ~ mas extricto, espera que sea el mismo objeto, con el mismo "hash".
     toEqual         ~ menos extricto, no espera que sea el mismo objeto, p.e. para Arrays.
@@ -283,6 +283,7 @@ o bien:
     toContain       ~ array o string contiene un item o substring.
     toThrow         ~ comprobar si se eleva una excepción.
     toThrowError    ~ comprobar si se eleva un error.
+    not
     ```
 [jasmine-api]: https://jasmine.github.io/edge/introduction.html
 - Snippet: para espiar la llamada de un metodo...

@@ -81,7 +81,27 @@ Podemos instintivamente pensar en un elemento <code>aside</code> como un element
 
 - Shorthand properties: [enlace](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties).
 
-- CSS reset: 
-    + [Eric Meyer’s reset](http://meyerweb.com/eric/tools/css/reset/)
-    + [Normalize.css](http://necolas.github.io/normalize.css/)
+- Units: [enlace](https://www.w3schools.com/CSSref/css_units.asp).
+    + Relativos: em, ex, ch, rem, vw, vh, vmin, vmax, %.
+    + Absolutos: cm, mm, in, px, pt, pc.
+
+- Box model:
+    + width, height, padding, margin, border.
+    + box-sizing: content-box | border-box | initial | inherit;
+    <br>La propiedad de <code>box-sizing</code> se utiliza para alterar el modelo de caja CSS predeterminado utilizado para calcular el ancho y la altura de los elementos.
+
+- Position: [enlace](http://www.barelyfitz.com/screencast/html-training/css/positioning/)
+    + position: static    ~ por defecto todos...
+    + position: relative  ~ respecto su posición natural.
+    + position: fixed     ~ relativo al viewport.
+    + position: absolute  ~ relativo al elemento posicionado padre (cuyo position != static).
+    + position: sticky    ~ relativo a la posición del scroll.
+    + float: right | left; [enlace](https://www.w3schools.com/Css/css_float.asp)
+    <br>Elementos después de un elemento <code>float</code> flotarán alrededor de él. Para evitar esto, utilizar la propiedad <code>clear</code>.
+
+- Trick: [centrado de elementos](https://css-tricks.com/centering-css-complete-guide/)
+
+- CSS reset: cross-browser compatibility.
+    + [Eric Meyer’s reset](http://meyerweb.com/eric/tools/css/reset/).
+    + [Normalize.css](http://necolas.github.io/normalize.css/).
 
