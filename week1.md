@@ -274,8 +274,8 @@ o bien:
 [jasmine]: https://jasmine.github.io
 - Metodos de jasmine: [[api]][jasmine-api]
     ```
-    toBe            ~ mas extricto, espera que sea el mismo objeto, con el mismo hash.
-    toEqual         ~ menos extricto, no espera que sea el mismo objeto
+    toBe            ~ mas extricto, espera que sea el mismo objeto, con el mismo "hash".
+    toEqual         ~ menos extricto, no espera que sea el mismo objeto, p.e. para Arrays.
     toBeDefined / toBeUndefined
     toBeTruthy / toBeFalsy
     toBeLessThan / toBeGreaterThan

@@ -60,4 +60,28 @@ Podemos instintivamente pensar en un elemento <code>aside</code> como un element
 
 - Syndication: contenido interpretable por un motor de contenido, tipo [hAtom 0.1 Microformat](http://microformats.org/wiki/hatom).
 
+## ~ 20170926
+
+### CSS
+
+- Specifity ~ prioridad en la selección: inline styles, selector por id, selector por clase, selector por atributo, por pseudo-clase, por elemento y pseudo-elemento. [enlace](https://specificity.keegan.st/)
+    + Selector por id > selector por clase > selector por atributo.
+    + Para la misma prioridad, el último tiene mayor prioridad. En este caso será rojo:
+        ```css
+        .class1 { color: black; }
+        .class2 { color: red; }
+        ```
+    + Para tener prioridad sobre todo, usar <code>!important</code>.
+
+- Type selectors: <code>div</code>, class selectors: <code>.awesome</code>, id selectors: <code>#shayhowe</code>.
+
+- Selectors:
+    + [w3.org](https://www.w3.org/TR/css3-selectors/#selectors).
+    + [w3schools](https://www.w3schools.com/CSS/css_pseudo_elements.asp).
+
+- Shorthand properties: [enlace](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties).
+
+- CSS reset: 
+    + [Eric Meyer’s reset](http://meyerweb.com/eric/tools/css/reset/)
+    + [Normalize.css](http://necolas.github.io/normalize.css/)
 
