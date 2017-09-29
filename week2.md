@@ -87,7 +87,7 @@ Podemos instintivamente pensar en un elemento <code>aside</code> como un element
 
 - Box model:
     + width, height, padding, margin, border.
-    + box-sizing: content-box | border-box | initial | inherit;
+    + box-sizing: content-box | **border-box** | initial | inherit;
     <br>La propiedad de <code>box-sizing</code> se utiliza para alterar el modelo de caja CSS predeterminado utilizado para calcular el ancho y la altura de los elementos.
 
 - Position: [enlace](http://www.barelyfitz.com/screencast/html-training/css/positioning/), [gráfico](images/positioning_elements.png)
@@ -105,3 +105,9 @@ Podemos instintivamente pensar en un elemento <code>aside</code> como un element
     + [Eric Meyer’s reset](http://meyerweb.com/eric/tools/css/reset/).
     + [Normalize.css](http://necolas.github.io/normalize.css/).
 
+## ~ 20170927
+
+- Flexbox: La idea principal detrás de <code>flex layout</code> es dar al contenedor la capacidad de alterar sus artículos (anchura, altura y orden) para llenar mejor el espacio disponible.
+Un contenedor <code>flex</code> expande los elementos para llenar el espacio libre disponible o los encoge para evitar el desbordamiento.
+[enlace](https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties)
+[cheatsheet](http://apps.workflower.fi/css-cheats/?name=flexbox)

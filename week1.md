@@ -253,6 +253,15 @@ o bien:
     $ git add <nuevo-fichero.js>
     $ git commit --ammend --no-edit
     ```
+- Hacer un pull request del servidor 
+    ```bash
+    $ git status
+    $ git add <nombre ficheros>
+    $ git commit -m "comentario ..."
+    $ git push origin master
+    ```
+    + ir a mi fork en GitHub, crear una Pull Request.
+    + validar (merge) el Pull Request en el repositorio original.
 
 ## ~ 20170922
 
