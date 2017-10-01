@@ -4,7 +4,7 @@
 
 ### HTML
 - Block-level vs. inline elements: [[enlace]][block-vs-inline]
-    + Un elemento de tipo **block-level** siempre empieza en una nueva linea y toma todo el ancho disponible (se agranda hasta la izquierda y derecha tanto como puede). P.e.: 
+    + Un elemento de tipo **block-level** siempre empieza en una nueva linea y toma todo el ancho disponible (se agranda hasta la izquierda y derecha tanto como puede). P.e.:
     ```html
     <div>
     <h1>
@@ -99,7 +99,38 @@ Podemos instintivamente pensar en un elemento <code>aside</code> como un element
     + float: right | left; [enlace](https://www.w3schools.com/Css/css_float.asp)
     <br>Elementos después de un elemento <code>float</code> flotarán alrededor de él. Para evitar esto, utilizar la propiedad <code>clear</code>.
 
-- Trick: [centrado de elementos](https://css-tricks.com/centering-css-complete-guide/)
+- Tricks:
+  + [centrado de elementos.](https://css-tricks.com/centering-css-complete-guide/)
+  + [más de centrado de elementos.](https://devcode.la/tutoriales/como-centrar-un-div-con-css/)
+
+- Media querys:
+  ```css
+  /* default styles here for older browsers.
+     I tend to go for a 600px - 960px width max but using percentages
+  */
+  @media only screen and (min-width:960px){
+    /* styles for browsers larger than 960px; */
+  }
+  @media only screen and (min-width:1440px){
+    /* styles for browsers larger than 1440px; */
+  }
+  @media only screen and (min-width:2000px){
+    /* for sumo sized (mac) screens */
+  }
+  @media only screen and (max-device-width:480px){
+    /* styles for mobile browsers smaller than 480px; (iPhone) */
+  }
+  @media only screen and (device-width:768px){
+    /* default iPad screens */
+  }
+  /* different techniques for iPad screening */
+  @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+    /* For portrait layouts only */
+  }
+  @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+    /* For landscape layouts only */
+  }
+  ```
 
 - CSS reset: cross-browser compatibility.
     + [Eric Meyer’s reset](http://meyerweb.com/eric/tools/css/reset/).
