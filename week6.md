@@ -62,3 +62,23 @@
 
 [link]: https://medium.freecodecamp.org/node-js-streams-everything-you-need-to-know-c9141306be93
 [stream-adventure]: https://github.com/workshopper/stream-adventure
+
+- Piping & *Transform*
+    ```javascript
+    const { Transform } = require('stream')
+
+    const toUpperCase = new Transform({
+        readableObjectMode: true,
+
+        transform(chunk, encoding, proceed) {
+            this.push(chunk.toString().toUpperCase())
+            
+            proceed()
+        }
+    })
+
+    process.stdin.pipe(toUpperCase).pipe(process.stdout)
+    ```
+
+    Entre Transform encadenados, hay que indicar _readableObjectMode: true_ y _writeableObjectMode: true_
+
