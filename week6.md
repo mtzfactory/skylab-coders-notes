@@ -56,9 +56,9 @@
     server.listen(3000)
     ```
 
-- Streams | pipe
-    [link](https://medium.freecodecamp.org/node-js-streams-everything-you-need-to-know-c9141306be93)
-    [stream-adventure](https://github.com/workshopper/stream-adventure)
+- [Streams][link] && pipes -> [stream-adventure][stream-adventure]
     ![streams](./images/node-streams.png)
     ![streams-events](./images/node-streams-events.png)
 
+[link]: https://medium.freecodecamp.org/node-js-streams-everything-you-need-to-know-c9141306be93
+[stream-adventure]: https://github.com/workshopper/stream-adventure
