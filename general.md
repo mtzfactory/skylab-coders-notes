@@ -1,8 +1,12 @@
 ### Páginas de interes.
-- para practicar: [cyber-dojo](http://cyber-dojo.org)
-- metodologia ágil: [trello](https://trello.com)
+- logos: [svgporn](https://svgporn.com) [awesome-design](https://github.com/oscarotero/awesome-design)
 - **emmet**: [manual](https://docs.emmet.io/cheat-sheet/)
-- Using Live Reload in Chrome and Sublime Text: [enlace](https://creativcoder.wordpress.com/2014/04/23/using-live-reload-in-chrome-and-sublime-text/)
+- Using Live Reload in Chrome and Sublime Text:
+  [enlace](https://creativcoder.wordpress.com/2014/04/23/using-live-reload-in-chrome-and-sublime-text/)
+
+### API públicas.
+- [apilist](https://apilist.fun)
+- [apis](http://www.enrique7mc.com/2016/05/lista-apis-publicas/)
 
 ### Configurar git para repositorios en Github.
 
@@ -19,3 +23,5 @@
 ### Instalar Sass.
 $ xcode-select --install
 $ sudo gem install -n /usr/local/bin sass
+
+934959274

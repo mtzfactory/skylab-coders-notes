@@ -142,3 +142,10 @@ Podemos instintivamente pensar en un elemento <code>aside</code> como un element
 Un contenedor <code>flex</code> expande los elementos para llenar el espacio libre disponible o los encoge para evitar el desbordamiento.
 [enlace](https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties)
 [cheatsheet](http://apps.workflower.fi/css-cheats/?name=flexbox)
+
+## ~20170928
+
+### SASS
+
+- extend (placeholders)
+- include (mixins)
